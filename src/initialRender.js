@@ -27,10 +27,23 @@ const initialComponent = () => {
   const paragraphText = document.createTextNode(loremText);
   paragraph.appendChild(paragraphText);
 
+  const heroImage = document.createElement('img');
+  heroImage.src = './assets/imgs/hero.webp';
+  heroImage.alt = 'cheems the dog as chef';
+  heroImage.classList = 'img-fit';
+
+  const paragraphHeroDiv = document.createElement('div');
+  paragraphHeroDiv.appendChild(paragraph);
+  paragraphHeroDiv.appendChild(heroImage);
+  paragraphHeroDiv.classList = 'hero flex flow-column';
+
   navbar.appendChild(headline);
   navbar.appendChild(logoDiv);
+
   componentContainer.appendChild(navbar);
-  componentContainer.appendChild(paragraph);
+  componentContainer.appendChild(paragraphHeroDiv);
+  // componentContainer.appendChild(paragraph);
+  // componentContainer.appendChild(heroImage);
 };
 
 export default initialComponent;
