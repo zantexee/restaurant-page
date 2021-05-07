@@ -1,0 +1,10 @@
+/* utilitie classes */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flow-column {
+  flex-flow: column wrap;
+}
