@@ -1,3 +1,3 @@
-import initialComponent from './initialRender';
+import homePage from './homePage';
 
-initialComponent();
+homePage();
