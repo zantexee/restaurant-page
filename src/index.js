@@ -1,3 +1,3 @@
-import homePage from './homePage';
+import Homepage from './Homepage';
 
-homePage();
+Homepage();
